@@ -41,7 +41,7 @@ def get_rag_chain():
     prompt = ChatPromptTemplate.from_template(prompt_template)
     llm = ChatGroq(
         temperature=0.3,
-        model_name="llama-3.3-70b-versatile",
+        model_name="llama-3.1-8b-instant",
         api_key=st.secrets["GROQ_API_KEY"]
     )
 
